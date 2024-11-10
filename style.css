@@ -271,11 +271,63 @@ section.visible {
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
     .hero h1 {
-        font-size: 2rem; /* Gerekirse ayarlayın */
+        font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 1rem; /* Gerekirse ayarlayın */
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .projects-grid, .docs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content, .contact-form {
+        padding: 0 1rem;
+    }
+}
+
+/* Navbar için ek stiller */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
     }
 }
