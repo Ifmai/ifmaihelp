@@ -269,3 +269,13 @@ section.visible {
 	background: var(--accent-color);
 	border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Gerekirse ayarlayın */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Gerekirse ayarlayın */
+    }
+}
